@@ -1,0 +1,69 @@
+#include <iostream> 
+#include <string> 
+using namespace std;
+
+    int main()
+    {
+	cout << " Willkommen bei 3-Satz!                                                         Du willst etwas sagen, aber bist zu faul einen Satz zu bilden?                  Kein Problem!                                                                   Vorab haben wir uns erstmal klar zu machen, warum du etwas sagen willst.        Wenn du deine Freude zu einem Thema zum Ausdruck bringen willst,dann tipp jetzt das Wort gut ein. Wenn du deinen Aerger ausdruecken willst, dann tipp das Wort  schlecht ein. Trifft keins von beidem zu, dann tipp irgend ein anderes Wort ein." << endl;
+	
+	std::string Begriff;
+    std:: string Bewertung;
+	std::cin >> Bewertung;
+
+	if(Bewertung=="gut")
+	{
+	cout << "ok, du bist ein positiver Typ, das gefällt mir!" << endl;
+	std::cout << "Gib jetzt dein Thema in Form eines Substantivs (Sachworts) ein und ich gebe dir Sätze: " << std::endl;
+	std::cin >> Begriff;
+	cout << "An dieser Stelle ist es mir eine Freude von der Idee zu sprechen, die gemeinhin unter dem Wort  " << flush;
+	cout << Begriff << flush;
+	cout << " erfasst wird." << endl;
+	cout << "Die Idee des Wortes " << flush;
+	cout << Begriff << flush;
+	cout << " erscheint mir des Lobes ueberaus wuerdig" << endl;
+        cout << Begriff << flush;
+	cout << ", ein Wort, das mein Gemuet durchaus zu erhellen weiss." << endl
+	system("pause");
+	
+}
+	else if (Bewertung=="schlecht")
+	{
+		cout << "Die Welt braucht Kritiker! Ich werde dich dabei unterstuetzen, dich auszudruecken." << endl;
+		std::cout << "Gib jetzt dein Thema in Form eines Substantivs (Sachworts) ein und ich gebe dir drei Sätze " << std::endl;
+		std::cin >> Begriff;
+		cout << Begriff << flush;
+		cout << " ,welch ein Wort! Es ist mein Bestreben an dieser Stelle meinen Unmut ueber diesen Begriff " << flush;		
+		cout << " zum Ausdruck zu bringen." << endl;
+		cout << " Ich hege Feindseligkeiten gegenüber so manchem Sachverhalt, der mit dem kritisch zu beäugelnden Wort " << flush;
+		cout << Begriff << flush;
+		cout << " zusammenhängt" << endl;
+		cout << "Die Idee des Wortes " << flush;
+		cout << Begriff << flush;
+		cout << " bringt Missstände zustande, welche nicht nur in der Theorie, sondern auch in der realen Wirklichkeit ihr Unwesen treiben." << endl;
+        system("pause");
+    	}
+	    
+        else
+	{
+		cout << "Freud und Leid bestimmt das Dasein vieler Menschen. Doch du hast gerade etwas anderes im Sinn als dich zu freuen oder zu aergern. Das unterstütze ich!" << endl;
+
+    	std::cout << "Gib jetzt dein Thema in Form eines Substantivs (Sachworts) ein und ich gebe dir drei Saetze " << std::endl;
+	    std::cin >> Begriff;
+		cout << " Ich wage zu behaupten, dass es hilfreich sein koennte, den Begriff " << flush;
+    	cout << Begriff << flush;
+		cout << " mit Geduld, Disziplin und Bescheidenheit naeher zu erforschen." << endl;
+		cout << " Der Herangang an die Idee des Wortes " << flush;
+	    cout << Begriff << flush;
+    	cout << " muss mit umsichtigen und kultiviertem Geiste vollzogen werden." << endl;
+	    cout << "Nähern wir uns aus lexikalischer- historischer- und praktischer Sicht dem Worte " << flush;
+	    cout << Begriff << flush;
+	    cout << ", so gilt es neben diesem analytischen Moment, auch freie Assoziationen zuzulassen, welche den Geist offenbaren, den das Wort " << flush;
+		cout << Begriff << flush;
+    	cout	<<", bei jedem einzelnen von uns erzeugt."<<endl;
+              system("pause");
+        }
+
+
+
+}
+
